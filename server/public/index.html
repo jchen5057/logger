@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <script src="/socket.io/socket.io.js"></script>
+</head>
+
+<body>
+  <div id="text">
+    <p></p>
+  </div>
+
+  <script>
+    var text = document.getElementById('text');
+
+    var socket = io.connect('http://localhost:8083');
+
+    socket.on('data', function(message) {
+      console.log('data', message);
+      text.innerHTML = message;
+    });
+    
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,9 @@
+{ 
+    "name": "[TE49i]",
+    "Serial": 1,
+    "Port": 5,
+    "BaudRate":9600,
+    "data_count":12,
+    "IP": "127.0.0.1",
+    "_port": 8081
+}
